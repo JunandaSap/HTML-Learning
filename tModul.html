@@ -1,0 +1,116 @@
+<!-- JUNANDA SAPUTRA WIDYA NUGROHO -->
+<!-- 1301213344 -->
+<!-- IF-45-05 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Tugas Modul 2</title>
+    <style>
+
+        .text-box {
+            background-color: rgb(223, 223, 221);
+            border: 1px solid #000;
+            padding: 10px;
+            width: 350px;
+            height: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        input[type="text"] {
+            width: 200px;
+        }
+        .button1 {
+            margin-left: 188px;
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <table border="1">
+            <tr>
+                <td colspan="3">
+                    <p align="center">Detail Mahasiswa</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Nama</th>
+                <th>Nim</th>
+                <th>Kelas</th>
+            </tr>
+            <tr>
+                <td>Junanda Saputra Widya Nugroho</td>
+                <td>1301213344</td>
+                <td>IF-45-05</td>
+            </tr>
+        </table>
+    </center><br />
+    <div class="text-box">
+        <center>
+            <h1>Modul 2 ABP</h1>
+            <video width="300" controls>
+                <source src="vid1.mp4" type="video/mp4">
+            </video>
+            <p>Source :
+            <a href="https://youtu.be/337-Aroj1Ew">Hirrhappy</a>
+            </p>
+            <h1>Formulir pendaftaran</h1>
+        </center>
+        <label for="nama" style="display: inline-block; margin-right: 35px;">Nama:</label>
+        <input type="text" id="nama" name="nama">
+        <label for="Username" style="display: inline-block; margin-right: 8px;">Username:</label>
+        <input type="text" id="Username" name="Username">
+        <label for="Password" style="display: inline-block; margin-right: 11px;">Password:</label>
+        <input type="text" id="Password" name="Password">
+        <label for="Email" style="display: inline-block; margin-right: 34px;">Email:</label>
+        <input type="text" id="Email" name="Email"><br />
+        <!-- radio button start -->
+        <b style="margin-left: 5px;">Jenis Kelamin :</b><br />
+        <ul>
+            <input style="margin-left: 20px;" type="radio" name="jenis kelamin" value="laki-laki"
+                checked />laki-laki<br />
+            <input style="margin-left: 20px;" type="radio" name="jenis kelamin" value="perempuan" /> perempuan <br />
+        </ul>
+        <!-- radio button end -->
+        <!-- checkbox start -->
+        <b style="margin-left: 5px;">Hobi : </b>
+        <ul>
+            <input style="margin-left: 20px;" type="checkbox" name="Berenang" value="Berenang" checked />Berenang<br />
+            <input style="margin-left: 20px;" type="checkbox" name="Memancing" value="Memancing" />Memancing<br />
+            <input style="margin-left: 20px;" type="checkbox" name="Memasak" value="Memasak" />Memasak<br />
+        </ul>
+        <!-- checkbox end -->
+        <!-- form start -->
+        <form>
+            <b>Jenjang Pendidikan : </b>
+            <input style="width: 100px;" type="text" list="JP" id="jenjang" name="jenjang" /><br />
+            <datalist id="JP">
+                <option value="Tamat D3">
+                <option value="Tamat S1">
+                <option value="Tamat S2">
+            </datalist>
+        </form> <br />
+        <!-- form end -->
+        <!-- textarea start -->
+        <b>pesan tambahan :</b><br />
+        <textarea style="margin-left: 50px;" name="pesan tambahan" id="tambahan" cols="30" rows="10">
+        </textarea><br />
+        <!-- textarea end -->
+        <!-- button start -->
+        <div class="button1">
+            <button type="submit" name="cancel" id="cancel">Cancel</button>
+            <button type="submit" name="Submit" id="Submit">Submit</button>
+        </div>
+        <!-- button end -->
+</body>
+
+</html>
